@@ -1,0 +1,107 @@
+html,body{
+margin:0;
+padding:0;
+background:#e3e1e8;
+}
+.box1{
+	position:absolute;
+	top:120px;
+	left:10px;
+	width:200px;
+	height:300px;
+	float:left;
+	margin:10px;
+	border:1px solid #7f8184;
+}
+.box2{
+	position:absolute;
+	top:120px;
+	left:240px;
+	width:200px;
+	height:300px;
+	float:left;
+	margin:10px;
+	border:1px solid #7f8184;
+}
+.box3{
+	position:absolute;
+	top:120px;
+	left:480px;
+	width:200px;
+	height:300px;
+	float:left;
+	margin:10px;
+	border:1px solid #7f8184;
+}
+img{
+	width:200px;
+	height:300px;
+}
+#gornja{
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:100px;
+	background-color:#4e5156;
+	line-height:50px;
+	border-bottom:5px solid black;
+}
+#gornja h2{
+	
+	color:#ccced1;
+	font-size:2em;
+	text-align:center;
+	
+}
+#donja{
+	position:absolute;
+	bottom:0px;
+	overflow:hidden;
+	width:100%;
+	height:100px;
+	line-height:50px;
+	background-color:#4e5156;
+	border-top:5px solid black;
+}
+#donja h2{
+	color:#ccced1;
+	font-size:2em;
+	text-align:center;
+	
+	
+}
+.zadnja{
+	
+	width:200px;
+	height:300px;
+	position:absolute;
+	transition: transform 1s linear;
+	
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+}
+.prednja{
+	width:200px;
+	height:300px;
+	position:absolute;
+	transition: transform 1s linear;
+	backface-visibility: hidden;
+}
+.box1:hover > .prednja {
+	transform: perspective(600px) rotateY(180deg);
+}
+.box1:hover > .zadnja {
+	transform: perspective(600px) rotateY(0deg);
+}
+.box2:hover > .prednja {
+	transform: perspective(600px) rotateY(180deg);
+}
+.box2:hover > .zadnja {
+	transform: perspective(600px) rotateY(0deg);
+}
+.box3:hover > .prednja {
+	transform: perspective(600px) rotateY(180deg);
+}
+.box3:hover > .zadnja {
+	transform: perspective(600px) rotateY(0deg);
+}
